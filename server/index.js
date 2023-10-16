@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin:"https://tnt-backend-6ljy.onrender.com",
+        origin:"https://assignment-tnt-shivv9761.vercel.app",
         credentials:true
     })
 )

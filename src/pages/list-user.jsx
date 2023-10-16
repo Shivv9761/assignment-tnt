@@ -12,6 +12,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import {Box} from "@mui/material";
 import Paper from '@mui/material/Paper';
 
 function ListUsers() {
@@ -47,7 +48,11 @@ function ListUsers() {
   }, []);
 
   return (
-    <div>
+    <Box
+      style={{ minHeight: '100vh',minWidth:'70vw' }}
+      justifyContent="center"
+      alignItems="center"
+      >
       <h1>List of Users</h1>
       <TableContainer component={Paper}>
         <Table>
@@ -79,7 +84,7 @@ function ListUsers() {
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+    </Box>
   );
 }
 

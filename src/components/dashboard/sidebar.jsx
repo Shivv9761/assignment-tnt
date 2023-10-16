@@ -1,67 +1,4 @@
-//import { useState } from "react";
-//import { useDispatch, useSelector } from "react-redux";
-//import { useNavigate } from "react-router-dom";
-//import { List, ListItemButton, ListItemIcon, ListItemText, Divider, Box, Button, Modal } from "@mui/material";
-//import { sidebarLinks } from "../../data/sidebarLinks";
-//import SidebarLink from "./sidebarlink";
-//import { logout } from "../../services/operations/authAPI";
-//
-//export default function Sidebar() {
-//  const { user, loading: profileLoading } = useSelector((state) => state.profile);
-//  const { loading: authLoading } = useSelector((state) => state.auth);
-//  const dispatch = useDispatch();
-//  const navigate = useNavigate();
-//
-//  if (profileLoading || authLoading) {
-//    // Placeholder for your loading state
-//    return <div>Loading...</div>;
-//  }
-//
-//  const handleLogoutClick = () => {
-//   dispatch(logout(navigate));
-//
-//  };
-//
-//  return (
-//    <>
-//      <Box
-//        sx={{
-//          height: 'calc(100vh - 3.5rem)',
-//          minWidth: '220px',
-//          borderRight: '1px solid',
-//          borderColor: 'grey.700',
-//          backgroundColor: 'grey.800',
-//          py: 3,
-//          display: 'flex',
-//          flexDirection: 'column',
-//          justifyContent: 'space-between',
-//        }}
-//      >
-//        <List>
-//          {sidebarLinks.map((link) => {
-//            if (link.type && user?.accountType !== link.type) {
-//              return null;
-//            }
-//            return (
-//              <SidebarLink key={link.id} link={link} iconName={link.icon} />
-//            );
-//          })}
-//        </List>
-//        <Box sx={{ mx: 'auto', my: 2, height: '1px', width: '80%', bgcolor: 'grey.700' }} />
-//        <List>
-//          <ListItemButton onClick={handleLogoutClick}>
-//            <ListItemIcon>
-//              Logout
-//            </ListItemIcon>
-//            <ListItemText primary="Logout" />
-//          </ListItemButton>
-//        </List>
-//      </Box>
-//
-//
-//    </>
-//  );
-//}
+
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -105,7 +42,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Tag-N-Trac
       </Typography>
       <Divider />
       <List>

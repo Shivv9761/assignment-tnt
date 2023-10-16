@@ -87,7 +87,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            Tag-N-Trac
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {sidebarLinks

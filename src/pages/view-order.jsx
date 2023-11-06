@@ -120,7 +120,7 @@ function OrdersView() {
               )
             }
             {
-              user.accountType === 'Customer' && (
+              user.accountType === 'Customer' && !order.delivered (
                 <Button
                   variant="contained"
                   color="secondary"

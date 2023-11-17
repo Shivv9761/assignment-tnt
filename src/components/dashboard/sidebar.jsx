@@ -87,7 +87,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Tag-N-Trac
+            ParcelPilot
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {sidebarLinks
